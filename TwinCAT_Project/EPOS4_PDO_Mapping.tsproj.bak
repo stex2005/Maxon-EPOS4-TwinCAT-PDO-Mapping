@@ -47,8 +47,8 @@
 					<EtherCAT SlaveType="2" PdiType="#x0680" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="45" FoeType="1" VendorId="#x000000fb" ProductCode="#x61500000" RevisionNo="#x01500000" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" DownloadSlotCfg="true" PortPhys="17" MaxSlotCount="1" MaxSlotGroupCount="1" SlotPdoIncrement="1" Type="EPOS4 Module 50/5 EtherCAT" Desc="EPOS4" PortABoxInfo="#x00ffffff">
 						<SyncMan>001030002600010001000000300030003000001026010000</SyncMan>
 						<SyncMan>301030002200010002000000300030003000301022010000</SyncMan>
-						<SyncMan>60100b006400010003000000000000000000601064010000</SyncMan>
-						<SyncMan>f01013002000010004000000000000000000f01020010000</SyncMan>
+						<SyncMan>60100f006400010003000000000000000000601064010000</SyncMan>
+						<SyncMan>f01015002000010004000000000000000000f01020010000</SyncMan>
 						<Fmmu>0000000000000000601000020100000001000000000000000000000000000000</Fmmu>
 						<Fmmu>0000000000000000f01000010100000002000000000000000000000000000000</Fmmu>
 						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
@@ -64,10 +64,10 @@
 							<Entry Name="Position actual value" Index="#x6064">
 								<Type>DINT</Type>
 							</Entry>
-							<Entry Name="Velocity actual value" Index="#x606c">
+							<Entry Name="Velocity actual value averaged" Index="#x30d3" Sub="#x01">
 								<Type>DINT</Type>
 							</Entry>
-							<Entry Name="Torque actual value" Index="#x6077">
+							<Entry Name="Torque actual value averaged" Index="#x30d2" Sub="#x01">
 								<Type>INT</Type>
 							</Entry>
 							<Entry Name="Mode of operation display" Index="#x6061">
@@ -78,6 +78,9 @@
 							</Entry>
 							<Entry Name="Analog input 1 voltage" Index="#x3160" Sub="#x01">
 								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Error code" Index="#x603f">
+								<Type>UINT</Type>
 							</Entry>
 						</Pdo>
 						<Pdo Name="CST Outputs" Index="#x1600" InOut="1" Flags="#x0080" SyncMan="2">
@@ -94,6 +97,9 @@
 								<Type>SINT</Type>
 							</Entry>
 							<Entry Name="Digital outputs" Index="#x60fe" Sub="#x01">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Output current limit" Index="#x3001" Sub="#x02">
 								<Type>UDINT</Type>
 							</Entry>
 						</Pdo>
