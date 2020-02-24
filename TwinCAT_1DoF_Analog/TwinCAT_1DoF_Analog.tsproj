@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.7">
+	<ImageDatas>
+		<ImageData Id="1000">424de6000000000000007600000028000000100000000e000000010004000000000070000000000000000000000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffff77777fffffffffff88887fffffffffff88887fffffffffff88c87fffffff0fff8ccc7f0000000fff88c878000000099f88c87f0000000fff88c87ffff0ff0fff88c87f0000ffffff88c87fffffffffff88c87fffffffffff88c87fffffffffff88887fffffffffff88887</ImageData>
+	</ImageDatas>
+	<Project ProjectGUID="{C981ECEA-5DC5-46B0-BD9F-8FB062AAA74C}" Target64Bit="true" ShowHideConfigurations="#x306">
+		<System>
+			<Tasks>
+				<Task Id="2" Priority="1" CycleTime="10000" AmsPort="301">
+					<Name>Task PDO</Name>
+					<Vars VarGrpType="1" InsertType="1">
+						<Name>Inputs</Name>
+						<Var>
+							<Name>Status</Name>
+							<Type>UINT</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" InsertType="1">
+						<Name>Outputs</Name>
+						<Var>
+							<Name>Control</Name>
+							<Type>UINT</Type>
+						</Var>
+					</Vars>
+					<Image Id="1" AddrType="1" ImageType="1" SizeIn="2" SizeOut="2">
+						<Name>Image</Name>
+					</Image>
+				</Task>
+			</Tasks>
+		</System>
+		<Io>
+			<Device Id="3" DevType="111" DevFlags="#x0003" AmsPort="28675" AmsNetId="192.168.204.1.4.1" RemoteName="Device 3 (EtherCAT)">
+				<Name>Device 3 (EtherCAT)</Name>
+				<AddressInfo>
+					<Pnp>
+						<DeviceDesc>Ethernet DELL (Realtek USB GbE Family Controller)</DeviceDesc>
+						<DeviceName>\DEVICE\{380C1F4C-BA56-40F5-9BE2-F5412D0AC63D}</DeviceName>
+						<DeviceData>106530b11715</DeviceData>
+					</Pnp>
+				</AddressInfo>
+				<Image Id="2" AddrType="9" ImageType="3">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="1" BoxType="9099" BoxFlags="#x00000020">
+					<Name>Drive 1 (EPOS4)</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x0680" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="45" FoeType="1" VendorId="#x000000fb" ProductCode="#x61500000" RevisionNo="#x01500000" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" DownloadSlotCfg="true" PortPhys="17" MaxSlotCount="1" MaxSlotGroupCount="1" SlotPdoIncrement="1" Type="EPOS4 Module 50/5 EtherCAT" Desc="EPOS4" PortABoxInfo="#x00ffffff">
+						<SyncMan>001030002600010001000000300030003000001026010000</SyncMan>
+						<SyncMan>301030002200010002000000300030003000301022010000</SyncMan>
+						<SyncMan>60100b006400010003000000000000000000601064010000</SyncMan>
+						<SyncMan>f01013002000010004000000000000000000f01020010000</SyncMan>
+						<Fmmu>0000000000000000601000020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000f01000010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<BootStrapData>0010640064106400</BootStrapData>
+						<DcData>0003000000000000000000000000000001000000000000000000000000000000</DcData>
+						<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<MBoxUserCmdData>020003000900000007000000030000000100090300000000000000000000000020606000010000000a4f70206d6f646500</MBoxUserCmdData>
+						<Pdo Name="CST Inputs" Index="#x1a00" Flags="#x0080" SyncMan="3">
+							<Entry Name="Statusword" Index="#x6041">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Position actual value" Index="#x6064">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Velocity actual value" Index="#x606c">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Torque actual value" Index="#x6077">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Mode of operation display" Index="#x6061">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Digital inputs" Index="#x60fd">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Analog input 1 voltage" Index="#x3160" Sub="#x01">
+								<Type>INT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="CST Outputs" Index="#x1600" InOut="1" Flags="#x0080" SyncMan="2">
+							<Entry Name="Controlword" Index="#x6040">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Target torque" Index="#x6071">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Torque offset" Index="#x60b2">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Mode of operation" Index="#x6060">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Digital outputs" Index="#x60fe" Sub="#x01">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<CoeProfile ProfileNo="402"/>
+						<Slot Name="Axis 1">
+							<SlotData>0000010001000000010000000000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>1627389954</ModuleIdent>
+							<ModuleIdent>1660944386</ModuleIdent>
+							<ModuleIdent>1744830466</ModuleIdent>
+							<ModuleIdent>1761607682</ModuleIdent>
+							<ModuleIdent>1778384898</ModuleIdent>
+							<Module Id="#x03090001" Type="CST Mode" Class="">
+								<Name>Module 1 (CST Mode)</Name>
+								<ImageId>405</ImageId>
+								<ModuleData>fb0000000200006a000004000000000000000000000000000000000000000000</ModuleData>
+								<PdoIndex>6656</PdoIndex>
+								<PdoIndex>5632</PdoIndex>
+								<CoeProfile ProfileNo="#x00000192"/>
+							</Module>
+						</Slot>
+					</EtherCAT>
+				</Box>
+				<EtherCAT DcSyncMode="3"/>
+			</Device>
+		</Io>
+	</Project>
+	<Mappings>
+		<MappingInfo Identifier="{00000000-0020-0304-1000-040320000403}" Id="#x02030010"/>
+		<OwnerA Name="TIRT^Task PDO">
+			<OwnerB Name="TIID^Device 3 (EtherCAT)^Drive 1 (EPOS4)">
+				<Link VarA="Inputs^Status" VarB="Module 1 (CST Mode)^CST Inputs^Statusword"/>
+				<Link VarA="Outputs^Control" VarB="Module 1 (CST Mode)^CST Outputs^Controlword"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmProject>
