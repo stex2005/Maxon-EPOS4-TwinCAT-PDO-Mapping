@@ -11,6 +11,17 @@ Install TwinCAT 3.1 – eXtended Automation Engineering (XAE) - 3.1.4024.7.
 
 Follow instructions at [this link (Maxon EPOS4 Application Notes)](https://www.maxongroup.fr/medias/sys_master/8828280471582.pdf)
 
+Open TwinCAT
+
+Modify PDO Mapping in Drive 1 - Process Data Tab
+
+Toggle Free-Run Mode
+
+Open EPOS Studio 
+
+Save all parameters on Driver.
+
 ## PDO Mapping
 
 ![PDO Mapping exported by TwinCAT](Media/PDO_Mapping.bmp)
+
