@@ -41,46 +41,22 @@
 					<FunctionId>33554432</FunctionId>
 					<InvokeId>25AB8DE5-7999-44f6-9F69-F8450D106483</InvokeId>
 					<Position>
+						<XPosition>0</XPosition>
+						<YPosition>0</YPosition>
+						<Width>1364</Width>
+						<Height>655</Height>
+					</Position>
+				</ControlWindow>
+				<ControlWindow>
+					<Name>Cyclic Sync Torque Mode - EPOS4 EtherCAT</Name>
+					<SystemTag>A753DF89-431C-4c6e-9875-2409D44D9387</SystemTag>
+					<FunctionId>67108864</FunctionId>
+					<InvokeId>6D776B26-6083-46d6-8F16-CC1F4A0079B7</InvokeId>
+					<Position>
 						<XPosition>-9</XPosition>
 						<YPosition>-38</YPosition>
 						<Width>1670</Width>
 						<Height>961</Height>
-					</Position>
-				</ControlWindow>
-				<ControlWindow>
-					<Name>I/O Monitor - EPOS4 EtherCAT</Name>
-					<SystemTag>A753DF89-431C-4c6e-9875-2409D44D9387</SystemTag>
-					<FunctionId>134217728</FunctionId>
-					<InvokeId>D7AA2172-218F-4190-9F15-A2B087CC53B7</InvokeId>
-					<Position>
-						<XPosition>224</XPosition>
-						<YPosition>224</YPosition>
-						<Width>1364</Width>
-						<Height>626</Height>
-					</Position>
-				</ControlWindow>
-				<ControlWindow>
-					<Name>Command Analyzer - EPOS4 EtherCAT</Name>
-					<SystemTag>A753DF89-431C-4c6e-9875-2409D44D9387</SystemTag>
-					<FunctionId>150994944</FunctionId>
-					<InvokeId>6DA3C9F9-87BD-4a42-BCD3-792698FF389E</InvokeId>
-					<Position>
-						<XPosition>256</XPosition>
-						<YPosition>256</YPosition>
-						<Width>1364</Width>
-						<Height>626</Height>
-					</Position>
-				</ControlWindow>
-				<ControlWindow>
-					<Name>Data Recorder - EPOS4 EtherCAT</Name>
-					<SystemTag>A753DF89-431C-4c6e-9875-2409D44D9387</SystemTag>
-					<FunctionId>50331648</FunctionId>
-					<InvokeId>0F1297DD-C1F0-41ee-B706-B9B5415742E5</InvokeId>
-					<Position>
-						<XPosition>288</XPosition>
-						<YPosition>288</YPosition>
-						<Width>1364</Width>
-						<Height>626</Height>
 					</Position>
 				</ControlWindow>
 			</WindowInformation>
@@ -285,18 +261,8 @@
 					</Configuration>
 				</Control>
 				<Control>
-					<InvokeId>D7AA2172-218F-4190-9F15-A2B087CC53B7</InvokeId>
-					<FunctionId>134217728</FunctionId>
-					<Configuration/>
-				</Control>
-				<Control>
-					<InvokeId>6DA3C9F9-87BD-4a42-BCD3-792698FF389E</InvokeId>
-					<FunctionId>150994944</FunctionId>
-					<Configuration/>
-				</Control>
-				<Control>
-					<InvokeId>0F1297DD-C1F0-41ee-B706-B9B5415742E5</InvokeId>
-					<FunctionId>50331648</FunctionId>
+					<InvokeId>6D776B26-6083-46d6-8F16-CC1F4A0079B7</InvokeId>
+					<FunctionId>67108864</FunctionId>
 					<Configuration/>
 				</Control>
 			</Controls>
