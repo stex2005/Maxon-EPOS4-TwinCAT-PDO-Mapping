@@ -39,34 +39,46 @@
 					<Name>Object Dictionary - EPOS4 EtherCAT</Name>
 					<SystemTag>A753DF89-431C-4c6e-9875-2409D44D9387</SystemTag>
 					<FunctionId>33554432</FunctionId>
-					<InvokeId>4EA22F5A-2961-4490-8723-A2800B4636D3</InvokeId>
+					<InvokeId>25AB8DE5-7999-44f6-9F69-F8450D106483</InvokeId>
 					<Position>
 						<XPosition>-9</XPosition>
 						<YPosition>-38</YPosition>
-						<Width>1172</Width>
-						<Height>660</Height>
+						<Width>1670</Width>
+						<Height>961</Height>
+					</Position>
+				</ControlWindow>
+				<ControlWindow>
+					<Name>I/O Monitor - EPOS4 EtherCAT</Name>
+					<SystemTag>A753DF89-431C-4c6e-9875-2409D44D9387</SystemTag>
+					<FunctionId>134217728</FunctionId>
+					<InvokeId>D7AA2172-218F-4190-9F15-A2B087CC53B7</InvokeId>
+					<Position>
+						<XPosition>224</XPosition>
+						<YPosition>224</YPosition>
+						<Width>1364</Width>
+						<Height>626</Height>
+					</Position>
+				</ControlWindow>
+				<ControlWindow>
+					<Name>Command Analyzer - EPOS4 EtherCAT</Name>
+					<SystemTag>A753DF89-431C-4c6e-9875-2409D44D9387</SystemTag>
+					<FunctionId>150994944</FunctionId>
+					<InvokeId>6DA3C9F9-87BD-4a42-BCD3-792698FF389E</InvokeId>
+					<Position>
+						<XPosition>256</XPosition>
+						<YPosition>256</YPosition>
+						<Width>1364</Width>
+						<Height>626</Height>
 					</Position>
 				</ControlWindow>
 				<ControlWindow>
 					<Name>Data Recorder - EPOS4 EtherCAT</Name>
 					<SystemTag>A753DF89-431C-4c6e-9875-2409D44D9387</SystemTag>
 					<FunctionId>50331648</FunctionId>
-					<InvokeId>555E592B-A9EE-43ca-8E98-5795AF9EDF98</InvokeId>
+					<InvokeId>0F1297DD-C1F0-41ee-B706-B9B5415742E5</InvokeId>
 					<Position>
-						<XPosition>32</XPosition>
-						<YPosition>32</YPosition>
-						<Width>1364</Width>
-						<Height>626</Height>
-					</Position>
-				</ControlWindow>
-				<ControlWindow>
-					<Name>Cyclic Sync Torque Mode - EPOS4 EtherCAT</Name>
-					<SystemTag>A753DF89-431C-4c6e-9875-2409D44D9387</SystemTag>
-					<FunctionId>67108864</FunctionId>
-					<InvokeId>2B168CC7-1173-4ae6-A008-4221F95FFB1D</InvokeId>
-					<Position>
-						<XPosition>64</XPosition>
-						<YPosition>64</YPosition>
+						<XPosition>288</XPosition>
+						<YPosition>288</YPosition>
 						<Width>1364</Width>
 						<Height>626</Height>
 					</Position>
@@ -264,7 +276,7 @@
 			</DeviceTypeSettings>
 			<Controls>
 				<Control>
-					<InvokeId>4EA22F5A-2961-4490-8723-A2800B4636D3</InvokeId>
+					<InvokeId>25AB8DE5-7999-44f6-9F69-F8450D106483</InvokeId>
 					<FunctionId>33554432</FunctionId>
 					<Configuration>
 						<ShowEnumText>true</ShowEnumText>
@@ -273,13 +285,18 @@
 					</Configuration>
 				</Control>
 				<Control>
-					<InvokeId>555E592B-A9EE-43ca-8E98-5795AF9EDF98</InvokeId>
-					<FunctionId>50331648</FunctionId>
+					<InvokeId>D7AA2172-218F-4190-9F15-A2B087CC53B7</InvokeId>
+					<FunctionId>134217728</FunctionId>
 					<Configuration/>
 				</Control>
 				<Control>
-					<InvokeId>2B168CC7-1173-4ae6-A008-4221F95FFB1D</InvokeId>
-					<FunctionId>67108864</FunctionId>
+					<InvokeId>6DA3C9F9-87BD-4a42-BCD3-792698FF389E</InvokeId>
+					<FunctionId>150994944</FunctionId>
+					<Configuration/>
+				</Control>
+				<Control>
+					<InvokeId>0F1297DD-C1F0-41ee-B706-B9B5415742E5</InvokeId>
+					<FunctionId>50331648</FunctionId>
 					<Configuration/>
 				</Control>
 			</Controls>
