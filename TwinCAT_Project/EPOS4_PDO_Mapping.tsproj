@@ -4,30 +4,6 @@
 		<ImageData Id="1000">424de6000000000000007600000028000000100000000e000000010004000000000070000000000000000000000000000000000000000000000000008000008000000080800080000000800080008080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00fffffffffff77777fffffffffff88887fffffffffff88887fffffffffff88c87fffffff0fff8ccc7f0000000fff88c878000000099f88c87f0000000fff88c87ffff0ff0fff88c87f0000ffffff88c87fffffffffff88c87fffffffffff88c87fffffffffff88887fffffffffff88887</ImageData>
 	</ImageDatas>
 	<Project ProjectGUID="{C981ECEA-5DC5-46B0-BD9F-8FB062AAA74C}" Target64Bit="true" ShowHideConfigurations="#x306">
-		<System>
-			<Tasks>
-				<Task Id="2" Priority="1" CycleTime="10000" AmsPort="301">
-					<Name>Task PDO</Name>
-					<Vars VarGrpType="1" InsertType="1">
-						<Name>Inputs</Name>
-						<Var>
-							<Name>Status</Name>
-							<Type>UINT</Type>
-						</Var>
-					</Vars>
-					<Vars VarGrpType="2" InsertType="1">
-						<Name>Outputs</Name>
-						<Var>
-							<Name>Control</Name>
-							<Type>UINT</Type>
-						</Var>
-					</Vars>
-					<Image Id="1" AddrType="1" ImageType="1" SizeIn="2" SizeOut="2">
-						<Name>Image</Name>
-					</Image>
-				</Task>
-			</Tasks>
-		</System>
 		<Io>
 			<Device Id="3" DevType="111" DevFlags="#x0003" AmsPort="28675" AmsNetId="192.168.204.1.4.1" RemoteName="Device 3 (EtherCAT)">
 				<Name>Device 3 (EtherCAT)</Name>
@@ -126,13 +102,4 @@
 			</Device>
 		</Io>
 	</Project>
-	<Mappings>
-		<MappingInfo Identifier="{00000000-0020-0304-1000-040320000403}" Id="#x02030010"/>
-		<OwnerA Name="TIRT^Task PDO">
-			<OwnerB Name="TIID^Device 3 (EtherCAT)^Drive 1 (EPOS4)">
-				<Link VarA="Inputs^Status" VarB="Module 1 (CST Mode)^CST Inputs^Statusword"/>
-				<Link VarA="Outputs^Control" VarB="Module 1 (CST Mode)^CST Outputs^Controlword"/>
-			</OwnerB>
-		</OwnerA>
-	</Mappings>
 </TcSmProject>
